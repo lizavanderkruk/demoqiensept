@@ -1,1 +1,32 @@
-Hallo
+<html>
+    <head>
+        <style>
+                    
+        </style>
+        <script>
+            function optellen(){
+                var getal1 = document.getElementById("first").value;
+                var getal2 = document.getElementById("second").value;
+                console.log(parseInt(getal1)+ parseInt(getal2));
+                var uitkomst = parseInt(getal1)+parseInt(getal2);
+                document.getElementById("result").value = uitkomst; 
+
+                if (uitkomst < 0) {
+                    document.getElementById("result").style.backgroundColor = 'red';
+                }
+                else {
+                    document.getElementById("result").style.backgroundColor = 'green';
+                }
+            }
+            
+        </script>
+    </head>    
+    <body>
+        <textarea id="first"> </textarea>
+        <textarea id="second"></textarea>
+        <button onclick="optellen()""> klik hier </button>
+        <br>
+        <br>
+        <textarea id=result></textarea>
+    </body>
+</html>
