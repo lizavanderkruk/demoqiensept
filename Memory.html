@@ -1,0 +1,88 @@
+<html>
+<head>
+    <style>
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    td{
+        border: 2px solid black;
+        height:100px; width: 70px;
+        background-color: lightblue;
+    }
+    
+    </style>
+<script>
+    var kaartje2 = false;
+    arrayKaartjes = [];
+    var player = [];
+    
+
+    function startGame(){
+        alert("start game");
+
+    }
+    function turnCard(){
+        if (kaartje2 = false){
+            kaartje1 = true;
+        }
+
+        Match();
+
+    }
+    function Match (kaartje1, kaartje2){
+        if (kaartje1 == kaartje2){
+
+        } else {
+            return document.getElementById().style.backgroundColor = "lightblue";
+        }
+
+    }
+
+
+</script>
+
+
+</head>
+<body>
+    <h1> Welcome to Memory!</h1>
+    <button onclick=startGame()>Begin spel</button>
+    <br>
+    <br>
+<table>
+    <tbody>
+        <tr>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+        </tr>
+        <tr>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+        </tr>
+        <tr>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+        </tr>
+        <tr>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+            <td onclick=turnCard()></td>
+        </tr>
+    </tbody>
+</table>
+
+    
+
+
+
+
+
+</body>
+
+</html>

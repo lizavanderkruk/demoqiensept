@@ -1,0 +1,69 @@
+<html>
+<head>
+<style>
+
+
+</style>
+<script>
+    /* function optellen(){
+        for(var x=0;x<10;x++){
+            console.log("test"+x);
+        }
+        var weekdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+        console.log(weekdagen[1]);
+        weekdagen[3] = "zaterdag";
+        weekdagen[4] = "zondag"; // laatje erbij maken -> push
+
+        for(var x=0;x<weekdagen.length;x++){
+            console.log(weekdagen[x]);
+        
+        if (weekdagen [x] == "zondag") {
+            console.log(weekdagen[x]);
+            alert("Je moet naar de kerk");
+        }  else {
+            alert("Je moet niet naar de kerk");
+        }
+        }
+    } */
+
+    /* function optellen(){
+        var getal1 = document.getElementById("eersteGetal").value;
+        console.log(document.getElementById("eersteGetal").value);
+        localStorage.setItem("zomaariets",getal1);
+    }
+
+    function opvragen(){
+        var opgevraagd = localStorage.getItem("zomaariets");
+        alert(opgevraagd);
+    } */ 
+
+    function optellen(){
+        var getal1 = document.getElementById("eersteGetal").value;
+        console.log(getal1.value);
+        localStorage.setItem("zomaariets",getal1);
+    }
+
+    function opvragen(){
+        var opgevraagd = localStorage.getItem("zomaariets");
+        alert(opgevraagd);
+        var eenObject = {};
+        eenObject.hoogte = 24;
+        alert(eenObject.hoogte);
+        var objJSON= JSON.stringify(eenObjet);
+        localStorage.setItem("gpo", objJSON);
+        var ophaal2 = localStorage.getItem("gpo");
+        var weerLevend = JSON.parse(ophaal2);
+        alert(weerLevend.hoogte);
+
+    }
+
+</script>
+</head>
+<body>
+    <input type=text id=eersteGetal>
+    <input type=text id=tweedeGetal>
+    <input type=button value="klikMaar" onclick="optellen()"> 
+    <button onclick=opvragen()>opvragen</button>
+   
+</body>
+</html>

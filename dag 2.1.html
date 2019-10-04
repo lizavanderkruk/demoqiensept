@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+
+
+</style>
+<script>
+    // DRY = Don't repeat yourself
+    // parameter zit aan de definerende kant
+    // argument zit in de aanroepende kant
+    /* function optellen(){
+        console.log("in optellen");
+        totEenBepaaldGetalTellen(45); // argument
+        console.log("===========");
+        totEenBepaaldGetalTellen(9); // argument
+    }
+    
+    function totEenBepaaldGetalTellen(eindGetal){ //parameter
+        var getal = 1;
+        while (getal < eindGetal){    
+            console.log(getal);
+            getal++;
+        } */
+
+// ********************************** //
+/*
+    // een aanroep van een methode kan vervangen worden door datgene wat hij returnt, indien hij iets returnt. 
+    function optellen(){
+        console.log(geefMijIets() + geefMijIets()); // (12 + 12) console zegt 24
+    }
+    function geefMijIets(){
+        console.log("in geef mij iets");
+        return 12;
+    } 
+*/
+// *********************************** //
+/*   function optellen(){
+        console.log(geefMijIets()[1]+ geefMijIets()[3]); // (7 + 2) console zegt 9
+    }
+    function geefMijIets(){
+        console.log("in geef mij iets");
+        return [5,7,9,2];
+    }
+*/
+
+
+
+
+</script>
+
+</head>
+<body>
+    <input type="button" value="klik maar" onclick="optellen()">
+   
+</body>
+</html>
