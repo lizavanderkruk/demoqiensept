@@ -35,11 +35,32 @@
         } 
 
         //=========== Advanced - fout --> nu zoekt hij op het woord input1 i.p.v. het ingevulde bij tekstveld2. Indien toepassen, welk onclick functie wijzigen naar numberOfStrings().
-        /* function numberOfString(){
+       /* function numberOfString(){
             var input1 = document.getElementById("tekstveld1").value;
             var input2 = document.getElementById("tekstveld2").value;
             alert("De letter " + input2 + " komt " + input1.match(/input1/g).length + " keer voor.");
         } */
+
+        //mini opdracht 3 versie 2
+        function aantalE(){
+            var input1 = document.getElementById("tekstveld1").value;
+            count = 0;
+            for (x=0; x<input1.length; x++){
+                if (input1.charAt(x) == "e") {
+                    count++
+                }
+            } alert("De letter E komt " + count + " keer voor.");
+        }
+        function numberOfString(){
+            var input1 = document.getElementById("tekstveld1").value;
+            var input2 = document.getElementById("tekstveld2").value;
+            count =0;
+            for (x=0; x<input1.length; x++){
+                if (input1.charAt(x) == input2){
+                    count++
+                }
+            } alert("De letter " + input2 + " komt " + count + " keer voor.")
+        }
     
         
     
@@ -97,7 +118,7 @@ https://www.w3schools.com/js/js_string_methods.asp </p>
 
 <p>Vul hier een woord in: <br> <input id="tekstveld1" type="text"></input></p>
 <p>Vul hier een letter(s) in waarvan u wilt weten hoe vaak deze voorkomt in het hierboven ingevulde woord:<br> <input id="tekstveld2" type="text"></input></p>
-<input type="button" value="klik" onclick="numberOfE()"></input>
+<input type="button" value="klik" onclick="numberOfString()"></input>
 
 
 </body>
