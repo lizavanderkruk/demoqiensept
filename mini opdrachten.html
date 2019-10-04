@@ -28,6 +28,19 @@
             } else {
         }
         }
+        // mini opdracht 3
+       function numberOfE(){
+            var input1 = document.getElementById("tekstveld1").value;
+            alert("De letter E komt " + input1.match(/e/g).length + " keer voor.");
+        } 
+
+        //=========== Advanced - fout --> nu zoekt hij op het woord input1 i.p.v. het ingevulde bij tekstveld2. Indien toepassen, welk onclick functie wijzigen naar numberOfStrings().
+        /* function numberOfString(){
+            var input1 = document.getElementById("tekstveld1").value;
+            var input2 = document.getElementById("tekstveld2").value;
+            alert("De letter " + input2 + " komt " + input1.match(/input1/g).length + " keer voor.");
+        } */
+    
         
     
        
@@ -38,13 +51,13 @@
 <body>
 <!-- Mini Opdracht 1-->
 <h1>MiniOpdracht 1</h1>
-<p>Maak een tekst-invoerveld.</p>
-<p>Maak een knop.</p>
-<p>In dat invoerveld kan ik als gebruiker iets intypen.</p>
-<p>Als ik hallo intyp en dan op de knop klik komt er een alert met Welkom.</p>
-<p>Als ik doei intyp en dan op de knop klik komt er een alert met Tot de volgende keer.</p>
-<p>https://www.w3schools.com/tags/att_input_type_text.asp</p>
-<p>In andere gevallen gebeurd er niks.</p>
+<p>Maak een tekst-invoerveld.
+Maak een knop.
+In dat invoerveld kan ik als gebruiker iets intypen.
+Als ik hallo intyp en dan op de knop klik komt er een alert met Welkom.
+Als ik doei intyp en dan op de knop klik komt er een alert met Tot de volgende keer.
+https://www.w3schools.com/tags/att_input_type_text.asp
+In andere gevallen gebeurd er niks.</p>
 <br>
 
 <input id="message" type="text" name="greeting"></input>
@@ -65,6 +78,27 @@ https://www.w3schools.com/js/js_string_methods.asp </p>
 
 <input id="tekstgebruiker" type=text></input>
 <input type=button value="Letter E check" onclick="letterE()"></input>
+
+<!-- Mini Opdracht 3-->
+<h1>MiniOpdracht 3</h1>
+ 
+<p>Maak een tekst-invoerveld.
+Maak nog een tekst-invoerveld.
+Maak een knop.
+In dat invoerveld kan ik als gebruiker iets intypen. 
+Dat eerste veld gebruik ik om een woord in te typen.
+ 
+Als ik op de knop klik, krijg ik een alert met hoe vaak de letter e er in zit.
+Zit er geen letter e in, dan gebeurd er niks.
+ 
+ADVANCED: in het tweede veld kan ik bepalen, van welke letter ik wil weten of die erin zit en hoe vaak.
+ 
+https://www.w3schools.com/js/js_string_methods.asp </p>
+
+<p>Vul hier een woord in: <br> <input id="tekstveld1" type="text"></input></p>
+<p>Vul hier een letter(s) in waarvan u wilt weten hoe vaak deze voorkomt in het hierboven ingevulde woord:<br> <input id="tekstveld2" type="text"></input></p>
+<input type="button" value="klik" onclick="numberOfE()"></input>
+
 
 </body>
 </html>
