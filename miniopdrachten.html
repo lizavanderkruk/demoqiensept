@@ -1,0 +1,60 @@
+<html lang = "en">
+<head>
+    <style>
+
+    </style>
+    <script>
+        // mini opdracht 1
+        var Greetings = ["hallo", "doei"];
+        function textMessage(){
+            var input =  document.getElementById("message").value;
+           if (Greetings[0] == input) {
+                alert("welkom");
+            }
+            else if (Greetings[1]== input) {
+                alert("Tot de volgende keer");
+            }
+            else {
+                
+            } 
+        }
+
+        // mini opdracht 2
+
+    </script>
+
+</head>
+
+<body>
+<!-- Mini Opdracht 1-->
+<h1>MiniOpdracht 1</h1>
+<p>Maak een tekst-invoerveld.</p>
+<p>Maak een knop.</p>
+<p>In dat invoerveld kan ik als gebruiker iets intypen.</p>
+<p>Als ik hallo intyp en dan op de knop klik komt er een alert met Welkom.</p>
+<p>Als ik doei intyp en dan op de knop klik komt er een alert met Tot de volgende keer.</p>
+<p>https://www.w3schools.com/tags/att_input_type_text.asp</p>
+<p>In andere gevallen gebeurd er niks.</p>
+<br>
+
+<input id="message" type="text" name="greeting"></input>
+<input type="button" onclick="textMessage()" value="Klik hier"></input>
+ 
+<!-- Mini Opdracht 2-->
+<h1>MiniOpdracht 2</h1>
+ 
+<p>Maak een tekst-invoerveld.
+Maak een knop.
+In dat invoerveld kan ik als gebruiker iets intypen. 
+Dat eerste veld gebruik ik om een woord in te typen.
+ 
+Als ik op de knop klik, krijg ik een alert als er de letter e in zit.
+Zit er geen letter e in, dan gebeurd er niks.
+ 
+https://www.w3schools.com/js/js_string_methods.asp </p>
+
+<input type=text></input>
+<input type=button value="Knop"></input>
+
+</body>
+</html>
