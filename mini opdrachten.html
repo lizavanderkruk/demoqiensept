@@ -15,7 +15,6 @@
                 alert("Tot de volgende keer");
             }
             else {
-                
             } 
         }
 
@@ -61,10 +60,43 @@
                 }
             } alert("De letter " + input2 + " komt " + count + " keer voor.")
         }
-    
+    //mini opdracht 4 en 5
+       //var buttons = [klikA, klikB, klikC, klikD]; 
+       var countA = 0;
+       var countB = 0;
+       var countC = 0;
+       var countD = 0;
+        function youClickedOnA(){
+            var aantalKliks = count;
+            var klikA = document.getElementById("knopA").value;
+            document.getElementById("A").innerHTML += "<br> U heeft op knop A geklikt.";
+            if(countA++ == 1){
+                alert("Je hebt al 2 keer op knop A geklikt");
+            }
+            }
         
+        function youClickedOnB(){
+            var klikB = document.getElementById("knopB").value;
+            document.getElementById("B").innerHTML += "<br> U heeft op knop B geklikt.";
+            if(countB++ == 1){
+                alert("Je hebt al 2 keer op knop B geklikt");
+            }
+        }
+        function youClickedOnC(){
+            document.getElementById("C").innerHTML += "<br> U heeft op knop C geklikt.";
+            var klikC = document.getElementById("knopC");
+            if(countC++ == 1){
+                alert("Je hebt al 2 keer op knop C geklikt");
+            }
+        }
+        function youClickedOnD(){
+            document.getElementById("D").innerHTML += "<br> U heeft op knop D geklikt.";
+            var klikD = document.getElementById("knopD");
+            if(countD++ == 1){
+                alert("Je hebt al 2 keer op knop D geklikt");
+            }
+        }
     
-       
     </script>
 
 </head>
@@ -86,7 +118,6 @@ In andere gevallen gebeurd er niks.</p>
  
 <!-- Mini Opdracht 2-->
 <h1>MiniOpdracht 2</h1>
- 
 <p>Maak een tekst-invoerveld.
 Maak een knop.
 In dat invoerveld kan ik als gebruiker iets intypen. 
@@ -102,7 +133,6 @@ https://www.w3schools.com/js/js_string_methods.asp </p>
 
 <!-- Mini Opdracht 3-->
 <h1>MiniOpdracht 3</h1>
- 
 <p>Maak een tekst-invoerveld.
 Maak nog een tekst-invoerveld.
 Maak een knop.
@@ -120,6 +150,30 @@ https://www.w3schools.com/js/js_string_methods.asp </p>
 <p>Vul hier een letter(s) in waarvan u wilt weten hoe vaak deze voorkomt in het hierboven ingevulde woord:<br> <input id="tekstveld2" type="text"></input></p>
 <input type="button" value="klik" onclick="numberOfString()"></input>
 
+<!-- Mini Opdracht 4 en 5-->
+<h1>MiniOpdracht 4</h1>
+<p>Maak 4 knoppen naast elkaar.
+Op de ene knop staat A, de andere B, die daarnaast C en die daarnaast D.
+ 
+Op het moment dat je op knop C van de knoppen klikt verschijnt er in een div.
+U heeft op knop C geklikt.
+ 
+Op het moment dat je op knop D klikt verschijnt er in een div.
+U heeft op knop C geklikt.
+U heeft op knop D geklikt.
+ 
+Hij houd dus jouw knop-klik history bij. </p>
+
+<button id="knopA" onclick="youClickedOnA()">A</button>
+<button id="knopB" onclick="youClickedOnB()">B</button>
+<button id="knopC" onclick="youClickedOnC()">C</button>
+<button id="knopD" onclick="youClickedOnD()">D</button>
+
+<br><br>
+<div id="A"></div>
+<div id="B"></div>
+<div id="C"></div>
+<div id="D"></div>
 
 </body>
 </html>
